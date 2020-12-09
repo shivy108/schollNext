@@ -2,12 +2,18 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className='container'>
-      <section className='home'>
+    <div className="container">
+      <header>
+        <meta
+          name="google-site-verification"
+          content="C22oib_7TPDWI_Mo7fehI1rYBDVhdiTIPGwGroO6EaM"
+        />
+      </header>
+      <section className="home">
         <h1>Scholl Garten- und Dachservice</h1>
         <h2>Ihr Partner im bereich Gartenunterhalt und Dachservice</h2>
       </section>
-      <section className='services'>
+      <section className="services">
         <h1>Gartenservice</h1>
         <h2>Unser Aufgabengebiet im Gartenservice umfasst:</h2>
         <ul>
@@ -23,7 +29,7 @@ export default function Home() {
           <li>Hauswartung und Objektbetreuung</li>
         </ul>
       </section>
-      <section className='services'>
+      <section className="services">
         <h1>Dachservice</h1>
         <h2>
           Servicearbeiten am Dach sind ein wichtiger Bestandteil zur Eindämmung
@@ -46,21 +52,22 @@ export default function Home() {
           <li>Ausführen von Kleinaufträgen </li>
         </ul>
       </section>
-      <section className='contact'>
+      <section className="contact">
         <h1>Kontakt</h1>
-        <h3 className='avatar_name'>Fabian Scholl</h3>
-        <h5 className='avatar_title'>Geschäftsführer</h5>
+        <h3 className="avatar_name">Fabian Scholl</h3>
+        <h5 className="avatar_title">Geschäftsführer</h5>
         <div>
-          <a href='tel:+4172620589'>+41 76 262 0589</a>
+          <a href="tel:+4172620589">+41 76 262 0589</a>
         </div>
         <div>
-          <a href='mailto:scholl.4.you@gmail.com'>scholl.4.you@gmail.com</a>
+          <a href="mailto:scholl.4.you@gmail.com">scholl.4.you@gmail.com</a>
         </div>
         <address>
           <a
-            target='_blank'
-            rel='noreferrer'
-            href='https://goo.gl/maps/mjsmuuvKTC9ydA267'>
+            target="_blank"
+            rel="noreferrer"
+            href="https://goo.gl/maps/mjsmuuvKTC9ydA267"
+          >
             Ober Rennweg 2<br /> 8633 Wolfhausen
           </a>
         </address>
