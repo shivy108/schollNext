@@ -1,63 +1,70 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className='container'>
+      <section className='home'>
+        <h1>Scholl Garten- und Dachservice</h1>
+        <h2>Ihr Partner im bereich Gartenunterhalt und Dachservice</h2>
+      </section>
+      <section className='services'>
+        <h1>Gartenservice</h1>
+        <h2>Unser Aufgabengebiet im Gartenservice umfasst:</h2>
+        <ul>
+          <li>Pflege von Grünflächen</li>
+          <li>Reinigung und Unterhalt von Aussenplätzen und Wegen</li>
+          <li>Rasenpflege (Mähen, Sähen, Düngen und Vertikutieren)</li>
+          <li>Rabatten pflegen und jäten</li>
+          <li>Schneiden von kleineren Bäumen, Hecken, Sträucher und Stauden</li>
+          <li>Neubepflanzungen</li>
+          <li>Ausführen von kleineren Gartenbauarbeiten </li>
+          <li>Entsorgung von Gartenabfällen und Grüngut </li>
+          <li> Winterdienst</li>
+          <li>Hauswartung und Objektbetreuung</li>
+        </ul>
+      </section>
+      <section className='services'>
+        <h1>Dachservice</h1>
+        <h2>
+          Servicearbeiten am Dach sind ein wichtiger Bestandteil zur Eindämmung
+          möglicher Schäden und tragen zum Erhalt der zuverlässigen Entwässerung
+          bei.
+        </h2>
+        <ul>
+          <li>Regelmässige Pflege von Dachbegrünung</li>
+          <li>Entfernen und ausjäten von Fremdbewuchs</li>
+          <li>
+            Reinigung und Kontrolle aller Dachwasserabläufe, Notüberläufe- und
+            Dachdurchdringungen
+          </li>
+          <li>
+            Kontrolle aller Spenglerarbeiten inkl. Wandanschlüsse/Kittfugen
+          </li>
+          <li>Kontrolle von Blitzschutzanlage</li>
+          <li>Kontrolle der Abdichtung und Deckung</li>
+          <li>Kleinere Spengler- und Reparaturarbeiten</li>
+          <li>Ausführen von Kleinaufträgen </li>
+        </ul>
+      </section>
+      <section className='contact'>
+        <h1>Kontakt</h1>
+        <h3 className='avatar_name'>Fabian Scholl</h3>
+        <h5 className='avatar_title'>Geschäftsführer</h5>
+        <div>
+          <a href='tel:+4172620589'>+41 76 262 0589</a>
         </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+        <div>
+          <a href='mailto:scholl.4.you@gmail.com'>scholl.4.you@gmail.com</a>
+        </div>
+        <address>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://goo.gl/maps/mjsmuuvKTC9ydA267'>
+            Ober Rennweg 2<br /> 8633 Wolfhausen
+          </a>
+        </address>
+      </section>
 
       <style jsx>{`
         .container {
@@ -205,5 +212,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
