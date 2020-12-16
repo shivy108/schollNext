@@ -8,11 +8,36 @@ export default function Home() {
           name='google-site-verification'
           content='C22oib_7TPDWI_Mo7fehI1rYBDVhdiTIPGwGroO6EaM'
         />
+        <link rel='canonical' href='https://scholl-garten-dach.ch/' />
+        <title>Scholl Garten- und Dachservice</title>
+        <meta
+          name='description'
+          content='Spezialisiert auf Garten- und Dachpflege'
+        />
+        <meta
+          name='keywords'
+          content='Scholl, Garten, Dach, unterhalt, Gartner, Spengler, Zürich'
+        />
+        <meta name='author' content='Shiv' />
       </Head>
       <div className='container'>
         <section className='home'>
           <h1>Scholl Garten- und Dachservice</h1>
           <h2>Ihr Partner im bereich Gartenunterhalt und Dachservice</h2>
+          <nav className= "nav">
+            <h3 className='welcome'>Entdecken</h3>
+            <ul className='button_container'>
+              <a href='#landing_page'>
+                <li className='button'>Home</li>
+              </a>
+              <a href='#services'>
+                <li className='button'>Service</li>
+              </a>
+              <a href='#contact'>
+                <li className='button'>Kontakt</li>
+              </a>
+            </ul>
+          </nav>
         </section>
         <section className='services'>
           <h1>Gartenservice</h1>
