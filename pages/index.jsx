@@ -29,12 +29,11 @@ export default function Home() {
           <a href="#pageTop">
             <img className="nav-logo" src="../assets/SVGLogo.svg" alt="" />
           </a>
-          <div className="nav-links">
-            <div className="nav-menu-links">
-              <a href="#garden">Garden</a>
-              <a href="#roof">Roof</a>
-              <a href="#contact">Contact</a>
-            </div>
+
+          <div className="nav-menu-links">
+            <a href="#garden">Garden</a>
+            <a href="#roof">Roof</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </nav>
@@ -47,12 +46,17 @@ export default function Home() {
           src="../assets/SVGLogo.svg"
           alt="Scholl Garten- und Dachservice"
         />
-        <img className="wheel-barrow" src="../assets/wheelbarrow.svg" alt="" />
-        <h2 className="subtitle">Ihr Partner im garten und unterhaltservice</h2>
+        <h2 className="subtitle">Ihr Partner im garten und dachservice</h2>
       </div>
 
       {/* Services  */}
       <h3 className="card-title">Services</h3>
+      <div className="title-wrapper">
+        <div className="line-left"></div>
+        <img className="wheel-barrow" src="../assets/wheelbarrow.svg" alt="" />
+        <div className="line-right"></div>
+      </div>
+
       <div className="split-container">
         <p className="garden">
           <h4>Garten</h4>
@@ -97,31 +101,43 @@ export default function Home() {
         </p>
       </div>
       {/* contact  */}
-      <h3 className="card-title">Kontact</h3>
-      <div className="container">
+
+      <div className="container-contact">
+        <h3 className="card-title">Kontact</h3>
+        <div className="title-wrapper">
+          <div className="line-left"></div>
+          <img
+            className="wheel-barrow"
+            src="../assets/wheelbarrow.svg"
+            alt=""
+          />
+          <div className="line-right"></div>
+        </div>
         <img className="fäbi" src="../assets/pic.jpg" alt="" />
         <h3 className="avatar_name">Fabian Scholl</h3>
-        <h5 className="avatar_title">Geschäftsführer</h5>
-        <div>
-          <a href="tel:+4172620589">+41 76 262 0589</a>
-        </div>
-        <div>
-          <a href="mailto:scholl.4.you@gmail.com">scholl.4.you@gmail.com</a>
-        </div>
-        <address>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://goo.gl/maps/mjsmuuvKTC9ydA267"
-          >
-            Ober Rennweg 2<br /> 8633 Wolfhausen
-          </a>
-        </address>
+        <p className="contact">
+          <div>
+            <a href="tel:+4172620589">+41 76 262 0589</a>
+          </div>
+          <div>
+            <a href="mailto:scholl.4.you@gmail.com">scholl.4.you@gmail.com</a>
+          </div>
+          <address>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://goo.gl/maps/mjsmuuvKTC9ydA267"
+            >
+              Ober Rennweg 2<br /> 8633 Wolfhausen
+            </a>
+          </address>
+        </p>
       </div>
       <footer>
         <img className="nav-logo" src="../assets/SVGLogo.svg" alt="" />
-        <div>CHE-472.350.091</div>
+
         <p>Copyright © Your Website 2020</p>
+        <p>CHE-472.350.091</p>
       </footer>
     </>
   );
