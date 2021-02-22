@@ -5,43 +5,58 @@ export default function Home() {
     <>
       <Head>
         <meta
-          name='google-site-verification'
-          content='C22oib_7TPDWI_Mo7fehI1rYBDVhdiTIPGwGroO6EaM'
+          name="google-site-verification"
+          content="C22oib_7TPDWI_Mo7fehI1rYBDVhdiTIPGwGroO6EaM"
         />
-        <link rel='canonical' href='https://scholl-garten-dach.ch/' />
+
+        <link rel="canonical" href="https://scholl-garten-dach.ch/" />
         <title>Scholl Garten- und Dachservice</title>
         <meta
-          name='description'
-          content='Spezialisiert auf Garten- und Dachpflege'
+          name="description"
+          content="Spezialisiert auf Garten- und Dachpflege"
         />
         <meta
-          name='keywords'
-          content='Scholl, Garten, Dach, unterhalt, Gartner, Spengler, Zürich'
+          name="keywords"
+          content="Scholl, Garten, Dach, unterhalt, Gartner, Spengler, Zürich"
         />
-        <meta name='author' content='Shiv' />
+        <meta name="author" content="Shiv" />
       </Head>
-      <div className='container'>
-        <section className='home'>
-          <h1>Scholl Garten- und Dachservice</h1>
-          <h2>Ihr Partner im bereich Gartenunterhalt und Dachservice</h2>
-          <nav className= "nav">
-            <h3 className='welcome'>Entdecken</h3>
-            <ul className='button_container'>
-              <a href='#landing_page'>
-                <li className='button'>Home</li>
-              </a>
-              <a href='#services'>
-                <li className='button'>Service</li>
-              </a>
-              <a href='#contact'>
-                <li className='button'>Kontakt</li>
-              </a>
-            </ul>
-          </nav>
-        </section>
-        <section className='services'>
-          <h1>Gartenservice</h1>
-          <h2>Unser Aufgabengebiet im Gartenservice umfasst:</h2>
+
+      {/* //Nav Bar// */}
+
+      <nav>
+        <div className="nav">
+          <a href="#pageTop">
+            <img className="nav-logo" src="../assets/SVGLogo.svg" alt="" />
+          </a>
+          <div className="nav-links">
+            <div className="nav-menu-links">
+              <a href="#garden">Garden</a>
+              <a href="#roof">Roof</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      {/* h1 for seo */}
+      <h1 className="hide">Scholl Garten- und Dachservice</h1>
+      {/* masthead */}
+      <div className="container">
+        <img
+          className="logo"
+          src="../assets/SVGLogo.svg"
+          alt="Scholl Garten- und Dachservice"
+        />
+        <img className="wheel-barrow" src="../assets/wheelbarrow.svg" alt="" />
+        <h2 className="subtitle">Ihr Partner im garten und unterhaltservice</h2>
+      </div>
+
+      {/* Services  */}
+      <h3 className="card-title">Services</h3>
+      <div className="split-container">
+        <p className="garden">
+          <h4>Garten</h4>
+          <p>Unser Aufgabengebiet im Gartenservice umfasst:</p>
           <ul>
             <li>Pflege von Grünflächen</li>
             <li>Reinigung und Unterhalt von Aussenplätzen und Wegen</li>
@@ -56,14 +71,14 @@ export default function Home() {
             <li> Winterdienst</li>
             <li>Hauswartung und Objektbetreuung</li>
           </ul>
-        </section>
-        <section className='services'>
-          <h1>Dachservice</h1>
-          <h2>
+        </p>
+        <p className="spengler">
+          <h4>Dach</h4>
+          <p>
             Servicearbeiten am Dach sind ein wichtiger Bestandteil zur
             Eindämmung möglicher Schäden und tragen zum Erhalt der zuverlässigen
-            Entwässerung bei.
-          </h2>
+            Entwässerung bei:
+          </p>
           <ul>
             <li>Regelmässige Pflege von Dachbegrünung</li>
             <li>Entfernen und ausjäten von Fremdbewuchs</li>
@@ -79,173 +94,36 @@ export default function Home() {
             <li>Kleinere Spengler- und Reparaturarbeiten</li>
             <li>Ausführen von Kleinaufträgen </li>
           </ul>
-        </section>
-        <section className='contact'>
-          <h1>Kontakt</h1>
-          <h3 className='avatar_name'>Fabian Scholl</h3>
-          <h5 className='avatar_title'>Geschäftsführer</h5>
-          <div>
-            <a href='tel:+4172620589'>+41 76 262 0589</a>
-          </div>
-          <div>
-            <a href='mailto:scholl.4.you@gmail.com'>scholl.4.you@gmail.com</a>
-          </div>
-          <address>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              href='https://goo.gl/maps/mjsmuuvKTC9ydA267'>
-              Ober Rennweg 2<br /> 8633 Wolfhausen
-            </a>
-          </address>
-        </section>
-
-        <style jsx>{`
-          .container {
-            min-height: 100vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          main {
-            padding: 5rem 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          footer {
-            width: 100%;
-            height: 100px;
-            border-top: 1px solid #eaeaea;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          footer img {
-            margin-left: 0.5rem;
-          }
-
-          footer a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          a {
-            color: inherit;
-            text-decoration: none;
-          }
-
-          .title a {
-            color: #0070f3;
-            text-decoration: none;
-          }
-
-          .title a:hover,
-          .title a:focus,
-          .title a:active {
-            text-decoration: underline;
-          }
-
-          .title {
-            margin: 0;
-            line-height: 1.15;
-            font-size: 4rem;
-          }
-
-          .title,
-          .description {
-            text-align: center;
-          }
-
-          .description {
-            line-height: 1.5;
-            font-size: 1.5rem;
-          }
-
-          code {
-            background: #fafafa;
-            border-radius: 5px;
-            padding: 0.75rem;
-            font-size: 1.1rem;
-            font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-              DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-          }
-
-          .grid {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            max-width: 800px;
-            margin-top: 3rem;
-          }
-
-          .card {
-            margin: 1rem;
-            flex-basis: 45%;
-            padding: 1.5rem;
-            text-align: left;
-            color: inherit;
-            text-decoration: none;
-            border: 1px solid #eaeaea;
-            border-radius: 10px;
-            transition: color 0.15s ease, border-color 0.15s ease;
-          }
-
-          .card:hover,
-          .card:focus,
-          .card:active {
-            color: #0070f3;
-            border-color: #0070f3;
-          }
-
-          .card h3 {
-            margin: 0 0 1rem 0;
-            font-size: 1.5rem;
-          }
-
-          .card p {
-            margin: 0;
-            font-size: 1.25rem;
-            line-height: 1.5;
-          }
-
-          .logo {
-            height: 1em;
-          }
-
-          @media (max-width: 600px) {
-            .grid {
-              width: 100%;
-              flex-direction: column;
-            }
-          }
-        `}</style>
-
-        <style jsx global>{`
-          html,
-          body {
-            padding: 0;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
-          }
-
-          * {
-            box-sizing: border-box;
-          }
-        `}</style>
+        </p>
       </div>
+      {/* contact  */}
+      <h3 className="card-title">Kontact</h3>
+      <div className="container">
+        <img className="fäbi" src="../assets/pic.jpg" alt="" />
+        <h3 className="avatar_name">Fabian Scholl</h3>
+        <h5 className="avatar_title">Geschäftsführer</h5>
+        <div>
+          <a href="tel:+4172620589">+41 76 262 0589</a>
+        </div>
+        <div>
+          <a href="mailto:scholl.4.you@gmail.com">scholl.4.you@gmail.com</a>
+        </div>
+        <address>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://goo.gl/maps/mjsmuuvKTC9ydA267"
+          >
+            Ober Rennweg 2<br /> 8633 Wolfhausen
+          </a>
+        </address>
+      </div>
+      <footer>
+        <img className="nav-logo" src="../assets/SVGLogo.svg" alt="" />
+        <div>CHE-472.350.091</div>
+        <p>Copyright © Your Website 2020</p>
+      </footer>
     </>
   );
 }
+// 29553a

@@ -1,0 +1,87 @@
+$primary: #486153;
+$secondary: rgb(103, 109, 96);
+$font1: whitesmoke;
+$font2: rgba(100, 96, 96, 0.2);
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: $font1;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: $font1;
+}
+.nav-logo {
+  width: 10rem;
+}
+.nav-menu-links {
+  display: flex;
+  justify-content: center;
+  a {
+    margin: 0.5rem;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: $secondary;
+  align-items: center;
+}
+.subtitle {
+  margin-top: 0.5rem;
+  color: $font1;
+  padding-top: 1rem;
+  text-align: center;
+}
+.wheel-barrow {
+  width: 4rem;
+}
+
+.fäbi {
+  width: 4rem;
+  border-radius: 100%;
+  align-self: center;
+}
+
+// Todo width mobile and pc
+.logo {
+  height: auto;
+  width: 80%;
+}
+.container > img:nth-child(2) {
+  width: 4rem;
+}
+.hide {
+  margin: 0;
+  font-size: 0;
+}
+.split-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: $font1;
+}
+.card-title {
+  text-align: center;
+}
+#__next > footer:nth-child(8) {
+  display: flex;
+  justify-content: center;
+  background-color: $font2;
+}
