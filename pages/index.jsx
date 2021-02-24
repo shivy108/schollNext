@@ -2,7 +2,7 @@ import Head from "next/head";
 import { AiTwotonePhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [load, setLoad] = useState(false);
@@ -11,10 +11,6 @@ export default function Home() {
 
   const changeLoad = () => {
     setTimeout(() => setLoad(true), 3000);
-  };
-
-  const onScroll = () => {
-    console.log(window.pageYOffset);
   };
 
   return (
@@ -40,12 +36,11 @@ export default function Home() {
 
       {/* //Nav Bar// */}
       {load ? (
-        <>
+        <div className='fade'>
           {" "}
           <nav>
             <div className="nav">
               <a
-              
                 onClick={() => {
                   setactiveContact(false);
                   setactive(false);
@@ -170,18 +165,18 @@ export default function Home() {
             <img className="fäbi" src="../assets/pic.jpg" alt="" />
             <h3 className="avatar_name">Fabian Scholl</h3>
             <div className="contact">
-              <div>
-                <AiTwotonePhone />
+              <div className='hover-item'>
+                <AiTwotonePhone className='icon'/>
                 <a href="tel:+4172620589">+41 76 262 0589</a>
               </div>
-              <div>
-                <MdEmail />
+              <div className='hover-item'>
+                <MdEmail className='icon'/>
                 <a href="mailto:scholl.4.you@gmail.com">
                   scholl.4.you@gmail.com
                 </a>
               </div>
-              <address>
-                <HiLocationMarker />
+              <address className='hover-item'>
+                <HiLocationMarker className='icon'/>
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -198,7 +193,7 @@ export default function Home() {
             <p>Copyright © Scholl Garten-und Dachservice 2020</p>
             <p>CHE-472.350.091</p>
           </footer>
-        </>
+        </div>
       ) : (
         <div onClick={changeLoad()} className="loadingScreen">
           <h1>Gruezi Wohl</h1>
