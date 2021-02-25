@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* //Nav Bar// */}
       {load ? (
-        <div className='fade'>
+        <div className="fade">
           {" "}
           <nav>
             <div className="nav">
@@ -91,9 +91,8 @@ export default function Home() {
               src="../assets/SVGLogo.svg"
               alt="Scholl Garten- und Dachservice"
             />
-            <h2 className="subtitle">Ihr Partner im garten und dachservice</h2>
+            <h2 className="subtitle">Ihr Partner im Garten und Dachservice</h2>
           </div>
-          // {/* Services  */}
           <h3 id="service" className="card-title">
             Services
           </h3>
@@ -165,18 +164,18 @@ export default function Home() {
             <img className="fäbi" src="../assets/pic.jpg" alt="" />
             <h3 className="avatar_name">Fabian Scholl</h3>
             <div className="contact">
-              <div className='hover-item'>
-                <AiTwotonePhone className='icon'/>
+              <div className="hover-item">
+                <AiTwotonePhone className="icon" />
                 <a href="tel:+4172620589">+41 76 262 0589</a>
               </div>
-              <div className='hover-item'>
-                <MdEmail className='icon'/>
+              <div className="hover-item">
+                <MdEmail className="icon" />
                 <a href="mailto:scholl.4.you@gmail.com">
                   scholl.4.you@gmail.com
                 </a>
               </div>
-              <address className='hover-item'>
-                <HiLocationMarker className='icon'/>
+              <address className="hover-item">
+                <HiLocationMarker className="icon" />
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -195,14 +194,16 @@ export default function Home() {
           </footer>
         </div>
       ) : (
-        <div onClick={changeLoad()} className="loadingScreen">
-          <h1>Gruezi Wohl</h1>
-          <img
-            className="wheel-barrow-loading"
-            src="../assets/wheelbarrow.svg"
-            alt=""
-          />
-          <h2>Herzlich Wilkommen</h2>
+        <div onClick={changeLoad()} className="loading-container">
+          <div className="loadingScreen">
+            <h1>Gruezi Wohl</h1>
+            <img
+              className="wheel-barrow-loading"
+              src="../assets/wheelbarrow.svg"
+              alt=""
+            />
+            <h2>Herzlich Wilkommen</h2>
+          </div>
         </div>
       )}
     </>

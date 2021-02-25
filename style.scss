@@ -257,13 +257,22 @@ address {
   background: white;
   cursor: pointer;
 }
-.loadingScreen {
+.loading-container {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $font2;
+  flex-wrap: wrap;
+}
+.loadingScreen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font2;
+  flex-wrap: wrap;
 }
 .wheel-barrow-loading {
   width: 8rem;
