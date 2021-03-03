@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
+
 import { AiTwotonePhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [load, setLoad] = useState(false);
@@ -10,7 +12,7 @@ export default function Home() {
   const [activeContact, setactiveContact] = useState(false);
 
   const changeLoad = () => {
-    setTimeout(() => setLoad(true), 3000);
+    setTimeout(() => setLoad(true), 2000);
   };
 
   return (
@@ -47,7 +49,12 @@ export default function Home() {
                 }}
                 href="#pageTop"
               >
-                <img className="nav-logo" src="../assets/SVGLogo.svg" alt="" />
+                <Image
+                  width={180}
+                  height={70}
+                  src="/assets/SVGLogo.svg"
+                  alt=""
+                />
               </a>
 
               <div className="nav-menu-links">
@@ -84,7 +91,6 @@ export default function Home() {
           </nav>
           // {/* h1 for seo */}
           <h1 className="hide">Scholl Garten- und Dachservice</h1>
-          // {/* masthead */}
           <div id="pageTop" className="container">
             <img
               className="logo"
@@ -106,7 +112,7 @@ export default function Home() {
             <div className="line-right"></div>
           </div>
           <div className="split-container">
-            <p id="garden" className="garden">
+            <div id="garden" className="garden">
               <h4>Garten</h4>
               <p>Unser Aufgabengebiet im Gartenservice umfasst:</p>
               <ul>
@@ -123,8 +129,8 @@ export default function Home() {
                 <li> Winterdienst</li>
                 <li>Hauswartung und Objektbetreuung</li>
               </ul>
-            </p>
-            <p id="spengler" className="spengler">
+            </div>
+            <div id="spengler" className="spengler">
               <h4>Dach</h4>
               <p>
                 Servicearbeiten am Dach sind ein wichtiger Bestandteil zur
@@ -147,9 +153,8 @@ export default function Home() {
                 <li>Kleinere Spengler- und Reparaturarbeiten</li>
                 <li>Ausführen von Kleinaufträgen </li>
               </ul>
-            </p>
+            </div>
           </div>
-          // {/* contact  */}
           <div id="contact" className="container-contact">
             <h3 className="card-title">Kontakt</h3>
             <div className="title-wrapper">
@@ -197,9 +202,10 @@ export default function Home() {
         <div onClick={changeLoad()} className="loading-container">
           <div className="loadingScreen">
             <h1>Gruezi Wohl</h1>
-            <img
-              className="wheel-barrow-loading"
-              src="../assets/wheelbarrow.svg"
+            <Image
+              width={80}
+              height={80}
+              src="/assets/wheelbarrow.svg"
               alt=""
             />
             <h2>Herzlich Wilkommen</h2>
